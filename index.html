@@ -105,7 +105,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/历史/" style="font-size: 10px;">历史</a>
+						<a href="/tags/Project-Euler/" style="font-size: 10px;">Project Euler</a> <a href="/tags/历史/" style="font-size: 10px;">历史</a>
 					</div>
 				</section>
 				
@@ -168,6 +168,73 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-euler001" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/22/euler001/" class="article-date">
+  	<time datetime="2016-02-22T02:16:33.000Z" itemprop="datePublished">2016-02-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/22/euler001/">Project Euler 001</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>想刷<a href="https://projecteuler.net/" target="_blank" rel="external">欧拉计划</a>很久了，一直都没有下定决心去做，这算是一个开始吧。下面的方法可能效率并不高，权当作一个练习，以后有更好的想法再补上。<br>后面引用<a href="http://sx349.github.io/" target="_blank" rel="external">sx349</a>的<a href="http://pe-cn.github.io/" target="_blank" rel="external">汉译</a>，在这里特别感谢一下（半年的“不平衡”后我已经有些惧怕这些清华的了）。</p>
+<h2 id="问题001"><a href="#问题001" class="headerlink" title="问题001"></a>问题001</h2><h3 id="Multiples-of-3-and-5"><a href="#Multiples-of-3-and-5" class="headerlink" title="Multiples of 3 and 5"></a>Multiples of 3 and 5</h3><p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+<p>Find the sum of all the multiples of 3 or 5 below 1000.</p>
+<h3 id="3的倍数和5的倍数"><a href="#3的倍数和5的倍数" class="headerlink" title="3的倍数和5的倍数"></a>3的倍数和5的倍数</h3><p>如果我们列出10以内所有3或5的倍数，我们将得到3、5、6和9，这些数的和是23。</p>
+<p>求1000以内所有3或5的倍数的和。</p>
+<h2 id="C实现"><a href="#C实现" class="headerlink" title="C实现"></a>C实现</h2><p>一种非常常规的C语言实现：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i, s = <span class="number">0</span>, upper = <span class="number">1000</span>;</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; upper; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(test(i))</span><br><span class="line">		&#123;</span><br><span class="line">			s += i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, s);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> a)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> !(a%<span class="number">3</span> &amp;&amp; a%<span class="number">5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><p>这或许还不是效率最高的方法，Mathematica用了也有一两年了，始终没能掌握她那优美的核心语言。</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Clear</span>[<span class="string">"Global`*"</span>];</span><br><span class="line">upper = <span class="number">1000</span>;</span><br><span class="line">target[x_] := <span class="keyword">Or</span>[<span class="keyword">Mod</span>[x, <span class="number">3</span>] == <span class="number">0</span>, <span class="keyword">Mod</span>[x, <span class="number">5</span>] == <span class="number">0</span>];</span><br><span class="line"><span class="keyword">Plus</span> @@ <span class="keyword">Cases</span>[<span class="keyword">Table</span>[i, <span class="list">&#123;i, upper - 1&#125;</span>], _?target]</span><br></pre></td></tr></table></figure>
+<h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>233168</p>
+<p>上述代码的运行结果均为此值。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Euler/">Project Euler</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-western-civilization" class="article article-type-post" itemscope itemprop="blogPost">
   
