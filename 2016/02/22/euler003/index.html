@@ -4,17 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives: 2016/2 | Celestial Phineas</title>
+  <title>Project Euler 003 | Celestial Phineas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Celestial Phineas&apos;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Celestial Phineas">
-<meta property="og:url" content="http://celestialphineas.github.io/archives/2016/02/index.html">
+  <meta name="description" content="问题003Largest prime factorThe prime factors of 13195 are 5, 7, 13 and 29.
+What is the largest prime factor of the number 600851475143 ?
+最大质因数13195的所有质因数为5、7、13和29。
+600851475143最大的质因数是多少？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Project Euler 003">
+<meta property="og:url" content="http://celestialphineas.github.io/2016/02/22/euler003/index.html">
 <meta property="og:site_name" content="Celestial Phineas">
-<meta property="og:description" content="Celestial Phineas&apos;s Blog">
+<meta property="og:description" content="问题003Largest prime factorThe prime factors of 13195 are 5, 7, 13 and 29.
+What is the largest prime factor of the number 600851475143 ?
+最大质因数13195的所有质因数为5、7、13和29。
+600851475143最大的质因数是多少？">
+<meta property="og:updated_time" content="2016-02-22T12:54:17.780Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Celestial Phineas">
-<meta name="twitter:description" content="Celestial Phineas&apos;s Blog">
+<meta name="twitter:title" content="Project Euler 003">
+<meta name="twitter:description" content="问题003Largest prime factorThe prime factors of 13195 are 5, 7, 13 and 29.
+What is the largest prime factor of the number 600851475143 ?
+最大质因数13195的所有质因数为5、7、13和29。
+600851475143最大的质因数是多少？">
   
     <link rel="alternative" href="/atom.xml" title="Celestial Phineas" type="application/atom+xml">
   
@@ -167,115 +177,98 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-euler003" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/02/22/euler003/" class="archive-article-date">
-  	<time datetime="2016-02-22T12:48:58.000Z" itemprop="datePublished">Feb 22</time>
+    <div class="article-meta">
+      <a href="/2016/02/22/euler003/" class="article-date">
+  	<time datetime="2016-02-22T12:48:58.000Z" itemprop="datePublished">2016-02-22</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/euler003/">Project Euler 003</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Project Euler 003
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Euler/">Project Euler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/未完全解决的问题/">未完全解决的问题</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="问题003"><a href="#问题003" class="headerlink" title="问题003"></a>问题003</h2><h3 id="Largest-prime-factor"><a href="#Largest-prime-factor" class="headerlink" title="Largest prime factor"></a>Largest prime factor</h3><p>The prime factors of 13195 are 5, 7, 13 and 29.</p>
+<p>What is the largest prime factor of the number 600851475143 ?</p>
+<h3 id="最大质因数"><a href="#最大质因数" class="headerlink" title="最大质因数"></a>最大质因数</h3><p>13195的所有质因数为5、7、13和29。</p>
+<p>600851475143最大的质因数是多少？</p>
+<a id="more"></a>
+<p>这道题比我想象得要难，原想兼顾一些效率的，结果是越写写不出来，索性暂时放下。自己写程序的功力还是太差，应该去学一些算法啊。得到结果倒是很容易的。具体实现以后补上。</p>
+<h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><p>非常玩赖的写法，全然失去乐趣。</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FactorInteger</span>[<span class="number">600851475143</span>][[-<span class="number">1</span>]][[<span class="number">1</span>]]</span><br></pre></td></tr></table></figure>
+<h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>6857</p>
+
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/02/22/euler002/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Project Euler 002</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/02/22/euler002/" class="archive-article-date">
-  	<time datetime="2016-02-22T04:26:29.000Z" itemprop="datePublished">Feb 22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/euler002/">Project Euler 002</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Euler/">Project Euler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/未完全解决的问题/">未完全解决的问题</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/02/22/euler001/" class="archive-article-date">
-  	<time datetime="2016-02-22T02:16:33.000Z" itemprop="datePublished">Feb 22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/22/euler001/">Project Euler 001</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Euler/">Project Euler</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="euler003" data-title="Project Euler 003" data-url="http://celestialphineas.github.io/2016/02/22/euler003/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"celestialphineas"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-    
+
+
 
 </div>
       <footer id="footer">
@@ -301,8 +294,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
