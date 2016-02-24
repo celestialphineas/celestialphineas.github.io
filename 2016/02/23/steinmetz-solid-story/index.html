@@ -28,7 +28,7 @@ x^2 + z^2 \">
 <meta property="og:image" content="http://celestialphineas.github.io/img/steinmetz-3.jpg">
 <meta property="og:image" content="http://celestialphineas.github.io/img/steinmetz-4.jpg">
 <meta property="og:image" content="http://mathworld.wolfram.com/images/eps-gif/SteinmetzSolid3Exploded_400.gif">
-<meta property="og:updated_time" content="2016-02-24T10:52:58.433Z">
+<meta property="og:updated_time" content="2016-02-24T10:57:05.987Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="三圆柱交集——一个陪伴我五年的故事">
 <meta name="twitter:description" content="三圆柱交集之体积的问题已经困扰我很多年了. 时至今日, 我仍然无法完全参悟这个问题.
@@ -127,7 +127,7 @@ x^2 + z^2 \">
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Project-Euler/" style="font-size: 20px;">Project Euler</a> <a href="/tags/历史/" style="font-size: 10px;">历史</a> <a href="/tags/数学/" style="font-size: 15px;">数学</a> <a href="/tags/未完全解决的问题/" style="font-size: 15px;">未完全解决的问题</a> <a href="/tags/歌词/" style="font-size: 10px;">歌词</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/Project-Euler/" style="font-size: 20px;">Project Euler</a> <a href="/tags/历史/" style="font-size: 10px;">历史</a> <a href="/tags/数学/" style="font-size: 15px;">数学</a> <a href="/tags/未完全解决的问题/" style="font-size: 20px;">未完全解决的问题</a> <a href="/tags/歌词/" style="font-size: 10px;">歌词</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -270,12 +270,12 @@ y^2 + z^2 \leq 1
 <figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FullSimplify</span>[<span class="keyword">Integrate</span>[<span class="keyword">Boole</span>[x^<span class="number">2</span> + y^<span class="number">2</span> &lt;= <span class="number">1</span> &amp;&amp; x^<span class="number">2</span> + z^<span class="number">2</span> &lt;= <span class="number">1</span> &amp;&amp; y^<span class="number">2</span> + z^<span class="number">2</span> &lt;= <span class="number">1</span>], <span class="list">&#123;x, -1, 1&#125;</span>, <span class="list">&#123;y, -1, 1&#125;</span>, <span class="list">&#123;z, -1, 1&#125;</span>]]</span><br></pre></td></tr></table></figure>
 <p>旋即答案 $8 \left(2-\sqrt{2}\right)$ 就出来了. </p>
 <h3 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h3><p>本以为到这里真的算是结了. 昨天威哥给出了两个新的解法, 感谢威哥, 这么久了还惦记着这个问题. 在这里记录一下, 用了重积分, 我还没有学到, 希望这学期期中能把它看明白吧. 我已堕落得一假期没看数学. 写这篇东西时, 上面那个积分都感到了手生. </p>
-<h2 id="方法二与方法三"><a href="#方法二与方法三" class="headerlink" title="方法二与方法三"></a>方法二与方法三</h2><p>这是威哥的方法. 真是佩服他那空间感佩服地五体投地, 分成这个样子都想得到. </p>
+<h2 id="方法二与方法三"><a href="#方法二与方法三" class="headerlink" title="方法二与方法三"></a>方法二与方法三</h2><p>这是威哥的方法. 真是佩服他那空间感佩服得五体投地, 分成这个样子都想得到. </p>
 <div style="text-align:center"><br><img src="/img/steinmetz-3.jpg" alt="第一卦限内图形的1/6"><br></div>
 
-<div style="text-align:center"><br><img src="/img/steinmetz-4.jpg" alt="第一卦限内图形的1/6"><br></div>
+<div style="text-align:center"><br><img src="/img/steinmetz-4.jpg" alt="第一卦限内图形的1/3"><br></div>
 
-<h2 id="方法四"><a href="#方法四" class="headerlink" title="方法四"></a>方法四</h2><p>原本是想查一查牟合方盖英语名称是什么的, 结果没想到越插越深, 最终查到了自己看不懂的 MathWorld. MathWorld 里面这个图实在是太启发人……</p>
+<h2 id="方法四"><a href="#方法四" class="headerlink" title="方法四"></a>方法四</h2><p>原本是想查一查牟合方盖英语名称是什么的, 结果没想到越查越深, 最终查到了自己看不懂的 MathWorld. MathWorld 里面这个图实在是太启发人……</p>
 <div style="text-align:center"><br><img src="http://mathworld.wolfram.com/images/eps-gif/SteinmetzSolid3Exploded_400.gif" alt="MathWorld 上给出的拆解"><br></div>
 
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>时至今日, 我的能力依旧在理解这个问题之下. 要说这个假期最大的收获, 大概就是发现了自己的无知与浅薄吧. 还是应该整理一篇小东西给自己看看. </p>
