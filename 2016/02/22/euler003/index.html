@@ -18,7 +18,7 @@ What is the largest prime factor of the number 600851475143 ?
 What is the largest prime factor of the number 600851475143 ?
 最大质因数13195的所有质因数为5、7、13和29。
 600851475143最大的质因数是多少？">
-<meta property="og:updated_time" content="2016-02-22T12:54:17.780Z">
+<meta property="og:updated_time" content="2016-02-27T05:13:59.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Project Euler 003">
 <meta name="twitter:description" content="问题003Largest prime factorThe prime factors of 13195 are 5, 7, 13 and 29.
@@ -115,7 +115,7 @@ What is the largest prime factor of the number 600851475143 ?
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Project-Euler/" style="font-size: 20px;">Project Euler</a> <a href="/tags/历史/" style="font-size: 10px;">历史</a> <a href="/tags/数学/" style="font-size: 15px;">数学</a> <a href="/tags/未完全解决的问题/" style="font-size: 20px;">未完全解决的问题</a> <a href="/tags/歌词/" style="font-size: 10px;">歌词</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/Project-Euler/" style="font-size: 20px;">Project Euler</a> <a href="/tags/历史/" style="font-size: 10px;">历史</a> <a href="/tags/数学/" style="font-size: 15px;">数学</a> <a href="/tags/未完全解决的问题/" style="font-size: 15px;">未完全解决的问题</a> <a href="/tags/歌词/" style="font-size: 10px;">歌词</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -203,7 +203,7 @@ What is the largest prime factor of the number 600851475143 ?
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Euler/">Project Euler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/未完全解决的问题/">未完全解决的问题</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Euler/">Project Euler</a></li></ul>
 	</div>
 
         
@@ -220,6 +220,8 @@ What is the largest prime factor of the number 600851475143 ?
 <p>600851475143最大的质因数是多少？</p>
 <a id="more"></a>
 <p>这道题比我想象得要难，原想兼顾一些效率的，结果是越写写不出来，索性暂时放下。自己写程序的功力还是太差，应该去学一些算法啊。得到结果倒是很容易的。具体实现以后补上。</p>
+<p>2016年2月27日：昨天晚上跟室友谈起这个问题，他随口而出。我原把注意力都用在了如何分配空间实现筛法什么的上面，后来仔细想想室友所言，质因数分解居然可以有这么简单的算法。感(mó)谢(bài)一下室友那活跃的思维，光凭想就想出来一个算法。</p>
+<h2 id="C实现"><a href="#C实现" class="headerlink" title="C实现"></a>C实现</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">long</span> <span class="keyword">long</span> x = <span class="number">600851475143</span>;</span><br><span class="line">	<span class="keyword">int</span> i;</span><br><span class="line">	<span class="keyword">int</span> target;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">2</span>; i &lt;= x; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(!(x % i))</span><br><span class="line">		&#123;</span><br><span class="line">			target = i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span>(!(x % i))</span><br><span class="line">		&#123;</span><br><span class="line">			x /= i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, target);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><p>非常玩赖的写法，全然失去乐趣。</p>
 <figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FactorInteger</span>[<span class="number">600851475143</span>][[-<span class="number">1</span>]][[<span class="number">1</span>]]</span><br></pre></td></tr></table></figure>
 <h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>6857</p>
