@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Project Euler 004 | Celestial Phineas</title>
+  <title>Project Euler 005 | Celestial Phineas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="问题005Smallest multiple2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Project Euler 004">
+<meta property="og:title" content="Project Euler 005">
 <meta property="og:url" content="http://celestialphineas.github.io/2016/02/28/euler005/index.html">
 <meta property="og:site_name" content="Celestial Phineas">
 <meta property="og:description" content="问题005Smallest multiple2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of">
-<meta property="og:updated_time" content="2016-02-28T15:06:04.819Z">
+<meta property="og:updated_time" content="2016-02-28T15:10:12.482Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Project Euler 004">
+<meta name="twitter:title" content="Project Euler 005">
 <meta name="twitter:description" content="问题005Smallest multiple2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of">
   
@@ -188,7 +188,7 @@ What is the smallest positive number that is evenly divisible by all of">
         
   
     <h1 class="article-title" itemprop="name">
-      Project Euler 004
+      Project Euler 005
     </h1>
   
 
@@ -216,7 +216,7 @@ What is the smallest positive number that is evenly divisible by all of">
 <p>该问题即求 1 至 20 这20个整数的最小公倍数。</p>
 <h2 id="C实现"><a href="#C实现" class="headerlink" title="C实现"></a>C实现</h2><p>这个方法是比较简单粗暴的。前面做了一个 <code>typedef</code> ，便于修改类型。 <code>int</code> 类型会溢出的。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> OUTPUT <span class="string">"%lld\n"</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> typeused;</span><br><span class="line"><span class="function">typeused <span class="title">gcd</span><span class="params">(typeused a, typeused b)</span></span>;</span><br><span class="line"><span class="function">typeused <span class="title">lcm</span><span class="params">(typeused a, typeused b)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	typeused multiple = <span class="number">1</span>, i;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">2</span>; i &lt;= <span class="number">20</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		multiple = lcm(multiple, i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(OUTPUT, multiple);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">typeused <span class="title">gcd</span><span class="params">(typeused a, typeused b)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!(a % b)) <span class="keyword">return</span> b;</span><br><span class="line">	<span class="keyword">return</span> gcd(b, a % b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">typeused <span class="title">lcm</span><span class="params">(typeused a, typeused b)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a * b / gcd(a, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="说一点数学"><a href="#说一点数学" class="headerlink" title="说一点数学"></a>说一点数学</h2><p>今天在百度看来的。小学基本功不扎实，而且数论方面又一窍不通。</p>
+<h2 id="说一点数学"><a href="#说一点数学" class="headerlink" title="说一点数学"></a>说一点数学</h2><p>今天在百度看来的。</p>
 <p>这里用了欧几里得算法求最大公因数。欧几里得算法成立，因为如下定理：</p>
 <blockquote><p><b>定理</b>  两个整数的最大公因数等于与其中较小数相除所得余数与较大数的最大公约数。</p>
 </blockquote>
@@ -234,7 +234,7 @@ What is the smallest positive number that is evenly divisible by all of">
 <blockquote><p><b>定理</b>  最大公因数与最小公倍数之积与两原数之积相等。</p>
 </blockquote>
 <h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">LCM</span> @@ <span class="keyword">Range</span>[<span class="number">20</span>]</span><br></pre></td></tr></table></figure>
-<p>在C代码运行时间达一秒的情况下，Mathematica这条语句跑得相当快， <code>AbsoluteTiming</code> 只有0.0000201326。</p>
+<p>在C代码运行时间达一秒的情况下，Mathematica这条语句跑得相当快， <code>AbsoluteTiming</code> 只有0.0000201326。反思一下上面的最小公倍数算法一定还存在问题，或许使用循环一一计算最小公倍数是不合理的。</p>
 <h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>232792560</p>
 
       
@@ -263,7 +263,7 @@ What is the smallest positive number that is evenly divisible by all of">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="euler005" data-title="Project Euler 004" data-url="http://celestialphineas.github.io/2016/02/28/euler005/"></div>
+	<div class="ds-thread" data-thread-key="euler005" data-title="Project Euler 005" data-url="http://celestialphineas.github.io/2016/02/28/euler005/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
