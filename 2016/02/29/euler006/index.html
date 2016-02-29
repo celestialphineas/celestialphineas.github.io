@@ -6,19 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Project Euler 005 | Celestial Phineas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题005Smallest multiple2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
-What is the smallest positive number that is evenly divisible by all of">
+  <meta name="description" content="问题006Sum square differenceThe sum of the squares of the first ten natural numbers is,
+$$1^2 + 2^2 + … + 10^2= 385$$
+The square of the sum of the first ten natural numbers is,
+$$(1 + 2 + … + 10)^2= 55^">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Project Euler 005">
-<meta property="og:url" content="http://celestialphineas.github.io/2016/02/28/euler005/index.html">
+<meta property="og:url" content="http://celestialphineas.github.io/2016/02/29/euler006/index.html">
 <meta property="og:site_name" content="Celestial Phineas">
-<meta property="og:description" content="问题005Smallest multiple2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
-What is the smallest positive number that is evenly divisible by all of">
-<meta property="og:updated_time" content="2016-02-28T15:10:12.482Z">
+<meta property="og:description" content="问题006Sum square differenceThe sum of the squares of the first ten natural numbers is,
+$$1^2 + 2^2 + … + 10^2= 385$$
+The square of the sum of the first ten natural numbers is,
+$$(1 + 2 + … + 10)^2= 55^">
+<meta property="og:updated_time" content="2016-02-29T15:05:34.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Project Euler 005">
-<meta name="twitter:description" content="问题005Smallest multiple2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
-What is the smallest positive number that is evenly divisible by all of">
+<meta name="twitter:description" content="问题006Sum square differenceThe sum of the squares of the first ten natural numbers is,
+$$1^2 + 2^2 + … + 10^2= 385$$
+The square of the sum of the first ten natural numbers is,
+$$(1 + 2 + … + 10)^2= 55^">
   
     <link rel="alternative" href="/atom.xml" title="Celestial Phineas" type="application/atom+xml">
   
@@ -171,11 +177,11 @@ What is the smallest positive number that is evenly divisible by all of">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-euler005" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-euler006" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/02/28/euler005/" class="article-date">
-  	<time datetime="2016-02-28T14:24:44.000Z" itemprop="datePublished">2016-02-28</time>
+      <a href="/2016/02/29/euler006/" class="article-date">
+  	<time datetime="2016-02-29T14:53:40.000Z" itemprop="datePublished">2016-02-29</time>
 </a>
     </div>
   
@@ -208,34 +214,28 @@ What is the smallest positive number that is evenly divisible by all of">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="问题005"><a href="#问题005" class="headerlink" title="问题005"></a>问题005</h2><h3 id="Smallest-multiple"><a href="#Smallest-multiple" class="headerlink" title="Smallest multiple"></a>Smallest multiple</h3><p>2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.</p>
-<p>What is the smallest positive number that is <i>evenly divisible</i> by all of the numbers from 1 to 20?</p>
-<h3 id="最小倍数"><a href="#最小倍数" class="headerlink" title="最小倍数"></a>最小倍数</h3><p>2520是最小的能够被1到10整除的数。</p>
-<p>最小的能够被1到20整除的正数是多少？</p>
+        <h2 id="问题006"><a href="#问题006" class="headerlink" title="问题006"></a>问题006</h2><h3 id="Sum-square-difference"><a href="#Sum-square-difference" class="headerlink" title="Sum square difference"></a>Sum square difference</h3><p>The sum of the squares of the first ten natural numbers is,</p>
+<p>$$1^2 + 2^2 + … + 10^2<br>= 385$$</p>
+<p>The square of the sum of the first ten natural numbers is,</p>
+<p>$$(1 + 2 + … + 10)^2<br>= 55^2 = 3025$$</p>
+<p>Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.</p>
+<p>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
+<h3 id="平方的和与和的平方之差"><a href="#平方的和与和的平方之差" class="headerlink" title="平方的和与和的平方之差"></a>平方的和与和的平方之差</h3><p>前十个自然数的平方的和是</p>
+<p>$$1^2 + 2^2 + … + 10^2<br>= 385$$</p>
+<p>前十个自然数的和的平方是</p>
+<p>$$(1 + 2 + … + 10)^2<br>= 55^2 = 3025$$</p>
+<p>因此前十个自然数的平方的和与和的平方之差是 3025 − 385 = 2640。</p>
+<p>求前一百个自然数的平方的和与和的平方之差。</p>
 <a id="more"></a>
 <p>该问题即求 1 至 20 这20个整数的最小公倍数。</p>
-<h2 id="C实现"><a href="#C实现" class="headerlink" title="C实现"></a>C实现</h2><p>这个方法是比较简单粗暴的。前面做了一个 <code>typedef</code> ，便于修改类型。 <code>int</code> 类型会溢出的。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> OUTPUT <span class="string">"%lld\n"</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> typeused;</span><br><span class="line"><span class="function">typeused <span class="title">gcd</span><span class="params">(typeused a, typeused b)</span></span>;</span><br><span class="line"><span class="function">typeused <span class="title">lcm</span><span class="params">(typeused a, typeused b)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	typeused multiple = <span class="number">1</span>, i;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">2</span>; i &lt;= <span class="number">20</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		multiple = lcm(multiple, i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(OUTPUT, multiple);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">typeused <span class="title">gcd</span><span class="params">(typeused a, typeused b)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!(a % b)) <span class="keyword">return</span> b;</span><br><span class="line">	<span class="keyword">return</span> gcd(b, a % b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">typeused <span class="title">lcm</span><span class="params">(typeused a, typeused b)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a * b / gcd(a, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="说一点数学"><a href="#说一点数学" class="headerlink" title="说一点数学"></a>说一点数学</h2><p>今天在百度看来的。</p>
-<p>这里用了欧几里得算法求最大公因数。欧几里得算法成立，因为如下定理：</p>
-<blockquote><p><b>定理</b>  两个整数的最大公因数等于与其中较小数相除所得余数与较大数的最大公约数。</p>
-</blockquote>
-<p>证明：</p>
-<span>$$\begin{align}
-&amp;a = kb + r, r=a\text{ mod }b\\
-&amp;\text{设整数 } d, \text{ 使得 } d \ | \ a, d \ | \ b\\
-\because\quad&amp;r = a - kb\\
-\therefore\quad&amp;\frac{r}{d} = \frac{a}{d} - \frac{kb}{d} = m\\
-\therefore\quad&amp;d\ |\ c\\
-\therefore\quad&amp;d\ |\left(a\text{ mod }b\right)\\
-\therefore\quad&amp;\left(a, b\right)\text{和}(b, a\text{ mod }b)\text{同公约数}\\
-\end{align}$$</span><!-- Has MathJax -->
-<p>求最小公倍数的一个定理：</p>
-<blockquote><p><b>定理</b>  最大公因数与最小公倍数之积与两原数之积相等。</p>
-</blockquote>
-<h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">LCM</span> @@ <span class="keyword">Range</span>[<span class="number">20</span>]</span><br></pre></td></tr></table></figure>
-<p>在C代码运行时间达一秒的情况下，Mathematica这条语句跑得相当快， <code>AbsoluteTiming</code> 只有0.0000201326。反思一下上面的最小公倍数算法一定还存在问题，或许使用循环一一计算最小公倍数是不合理的。</p>
-<h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>232792560</p>
+<h2 id="C实现"><a href="#C实现" class="headerlink" title="C实现"></a>C实现</h2><p>方法应该很丰富，这里做的简化并不多。算下来似乎连<code>long long&lt;\code&gt;都用不上。</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i, j;</span><br><span class="line">	<span class="keyword">long</span> <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++)</span><br><span class="line">		<span class="keyword">for</span>(j = i + <span class="number">1</span>; j &lt;= <span class="number">100</span>; j++)</span><br><span class="line">			sum += i * j;</span><br><span class="line">			</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, sum &lt;&lt; <span class="number">1</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="说一点数学"><a href="#说一点数学" class="headerlink" title="说一点数学"></a>说一点数学</h2><p>其实莫不如用求和公式。</p>
+<span>$$\sum_{i=1}^{n} i^2
+= \frac{1}{6} n\left(n+1\right)\left(2n+1\right)$$</span><!-- Has MathJax -->
+<h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><p>我相信Mathematica自己会找到最快的方法的。</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sum</span>[i, <span class="list">&#123;i, 100&#125;</span>]^<span class="number">2</span> - <span class="keyword">Sum</span>[i^<span class="number">2</span>, <span class="list">&#123;i, 100&#125;</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>25164150</p>
 
       
     </div>
@@ -245,18 +245,9 @@ What is the smallest positive number that is evenly divisible by all of">
     
 <nav id="article-nav">
   
-    <a href="/2016/02/29/euler006/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Project Euler 005
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/02/27/euler004/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Project Euler 004</div>
+    <a href="/2016/02/28/euler005/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Project Euler 005</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -272,7 +263,7 @@ What is the smallest positive number that is evenly divisible by all of">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="euler005" data-title="Project Euler 005" data-url="http://celestialphineas.github.io/2016/02/28/euler005/"></div>
+	<div class="ds-thread" data-thread-key="euler006" data-title="Project Euler 005" data-url="http://celestialphineas.github.io/2016/02/29/euler006/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
