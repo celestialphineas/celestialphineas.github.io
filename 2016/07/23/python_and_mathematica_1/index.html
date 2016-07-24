@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Python 和 Mathematica 中的列表 | Celestial Phineas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python 中的列表概述Python 提供了很多复合数据类型，列表是其中之一，Python 中的列表是序列（sequence）的一种，序列是可以通过整数下标获取元素（使用getitem()方法）、能够获得长度（使用len()方法）的可迭代对象（iterable）。可迭代对象指每次只能返回其一个成员的对象。
-Python 的列表是有序的，可变长的，可以对元素进行修改的。列表元素可以是相同类型，也可">
+  <meta name="description" content="刚刚接触 Python，真是没有料想 Python 里面也有列表这种东西，并且特性还和 Mathematica 中的十分相像。Python 和 Mathematica 相像的地方真的很多：比如 Python 的交互模式，输入输出和 Mathematica 很是相像；都有列表；都同时支持过程式编程和函数式编程……当然，现在还没有学到那么深。
+下面简单做一个整理，总结一下 Python 中的列表和 M">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 和 Mathematica 中的列表">
 <meta property="og:url" content="http://celestialphineas.github.io/2016/07/23/python_and_mathematica_1/index.html">
 <meta property="og:site_name" content="Celestial Phineas">
-<meta property="og:description" content="Python 中的列表概述Python 提供了很多复合数据类型，列表是其中之一，Python 中的列表是序列（sequence）的一种，序列是可以通过整数下标获取元素（使用getitem()方法）、能够获得长度（使用len()方法）的可迭代对象（iterable）。可迭代对象指每次只能返回其一个成员的对象。
-Python 的列表是有序的，可变长的，可以对元素进行修改的。列表元素可以是相同类型，也可">
-<meta property="og:updated_time" content="2016-07-23T10:58:10.926Z">
+<meta property="og:description" content="刚刚接触 Python，真是没有料想 Python 里面也有列表这种东西，并且特性还和 Mathematica 中的十分相像。Python 和 Mathematica 相像的地方真的很多：比如 Python 的交互模式，输入输出和 Mathematica 很是相像；都有列表；都同时支持过程式编程和函数式编程……当然，现在还没有学到那么深。
+下面简单做一个整理，总结一下 Python 中的列表和 M">
+<meta property="og:updated_time" content="2016-07-24T10:48:40.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 和 Mathematica 中的列表">
-<meta name="twitter:description" content="Python 中的列表概述Python 提供了很多复合数据类型，列表是其中之一，Python 中的列表是序列（sequence）的一种，序列是可以通过整数下标获取元素（使用getitem()方法）、能够获得长度（使用len()方法）的可迭代对象（iterable）。可迭代对象指每次只能返回其一个成员的对象。
-Python 的列表是有序的，可变长的，可以对元素进行修改的。列表元素可以是相同类型，也可">
+<meta name="twitter:description" content="刚刚接触 Python，真是没有料想 Python 里面也有列表这种东西，并且特性还和 Mathematica 中的十分相像。Python 和 Mathematica 相像的地方真的很多：比如 Python 的交互模式，输入输出和 Mathematica 很是相像；都有列表；都同时支持过程式编程和函数式编程……当然，现在还没有学到那么深。
+下面简单做一个整理，总结一下 Python 中的列表和 M">
   
     <link rel="alternative" href="/atom.xml" title="Celestial Phineas" type="application/atom+xml">
   
@@ -36,7 +36,7 @@ Python 的列表是有序的，可变长的，可以对元素进行修改的。�
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img lazy-src="null" class="js-avatar">
+			<img lazy-src="https://avatars3.githubusercontent.com/u/17267055?v=3&amp;s=460" class="js-avatar">
 			
 		</a>
 
@@ -98,9 +98,9 @@ Python 的列表是有序的，可变长的，可以对元素进行修改的。�
 					<nav class="header-nav">
 						<div class="social">
 							
-								<a class="weibo" target="_blank" href="http://weibo.com/celestialphineas" title="weibo">weibo</a>
+								<a class="github" target="_blank" href="https://github.com/celestialphineas" title="github">github</a>
 					        
-								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+								<a class="twitter" target="_blank" href="https://twitter.com/CelPhineas" title="twitter">twitter</a>
 					        
 						</div>
 					</nav>
@@ -139,7 +139,7 @@ Python 的列表是有序的，可变长的，可以对元素进行修改的。�
 		<header id="header" class="inner">
 			<div class="profilepic">
 			
-				<img lazy-src="null" class="js-avatar">
+				<img lazy-src="https://avatars3.githubusercontent.com/u/17267055?v=3&amp;s=460" class="js-avatar">
 			
 			</div>
 			<hgroup>
@@ -161,9 +161,9 @@ Python 的列表是有序的，可变长的，可以对元素进行修改的。�
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="weibo" target="_blank" href="http://weibo.com/celestialphineas" title="weibo">weibo</a>
+						<a class="github" target="_blank" href="https://github.com/celestialphineas" title="github">github</a>
 			        
-						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+						<a class="twitter" target="_blank" href="https://twitter.com/CelPhineas" title="twitter">twitter</a>
 			        
 				</div>
 			</nav>
@@ -208,13 +208,65 @@ Python 的列表是有序的，可变长的，可以对元素进行修改的。�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="Python-中的列表"><a href="#Python-中的列表" class="headerlink" title="Python 中的列表"></a>Python 中的列表</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>Python 提供了很多复合数据类型，列表是其中之一，Python 中的列表是序列（sequence）的一种，序列是可以通过整数下标获取元素（使用<code><strong>getitem</strong>()</code>方法）、能够获得长度（使用<code><strong>len</strong>()</code>方法）的可迭代对象（iterable）。可迭代对象指每次只能返回其一个成员的对象。</p>
-<p>Python 的列表是有序的，可变长的，可以对元素进行修改的。列表元素可以是相同类型，也可以是不同类型，并且可以将列表作为列表元素。</p>
-<h2 id="Mathematica-中的列表"><a href="#Mathematica-中的列表" class="headerlink" title="Mathematica 中的列表"></a>Mathematica 中的列表</h2><h3 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h3><p>Mathematica中，列表是一个常见的普通目的表达式类型。Mathematica的核心思想，是将所有对象用符号表达式表示，符号表达式的形式为：</p>
-<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">头部[参数序列]</span><br></pre></td></tr></table></figure>
-<p>其中参数序列以逗号“,”间隔，Mathematica（或是说Wolfram Language）语言中其他的句法都是语法糖，无一例外地可以用符号表达式去替换。</p>
-<p>列表也不例外，列表具有头部List，Mathematica中列表的长度和深度是任意的，但不能通过某种规则去试图构造一个长度或深度为无穷的列表。</p>
+        <p>刚刚接触 Python，真是没有料想 Python 里面也有列表这种东西，并且特性还和 Mathematica 中的十分相像。Python 和 Mathematica 相像的地方真的很多：比如 Python 的交互模式，输入输出和 Mathematica 很是相像；都有列表；都同时支持过程式编程和函数式编程……当然，现在还没有学到那么深。</p>
+<p>下面简单做一个整理，总结一下 Python 中的列表和 Mathematica 中列表的异同。</p>
+<a id="more"></a>
+<h1 id="怎么去看待列表？"><a href="#怎么去看待列表？" class="headerlink" title="怎么去看待列表？"></a>怎么去看待列表？</h1><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p>Python 提供了很多复合数据类型，列表是其中之一，Python 中的列表是序列（sequence）的一种，序列是可以通过整数下标获取元素（使用<code>&#95;&#95;getitem&#95;&#95;()</code>方法）、能够获得长度（使用<code>&#95;&#95;len&#95;&#95;()</code>方法）的可迭代对象（iterable）。可迭代对象指每次只能返回其一个成员的对象。</p>
+<p>Python 的列表是有序的、可变长的、可以对元素进行修改的。列表元素可以是相同类型，也可以是不同类型，并且可以将列表作为列表元素。</p>
+<h2 id="Mathematica"><a href="#Mathematica" class="headerlink" title="Mathematica"></a>Mathematica</h2><p>Mathematica 中，列表是一个常见的普通目的表达式类型。Mathematica 的核心思想，是将所有对象用符号表达式表示，符号表达式的形式为：</p>
+<p><code>头部[参数序列]</code></p>
+<p>其中参数序列以逗号“,”间隔，Mathematica（或是说 Wolfram Language）语言中其他的句法可以说都是语法糖，无一例外地可以用符号表达式去替换。</p>
+<p>列表也不例外，列表具有头部<code>List</code>，Mathematica 中列表的长度和深度是任意的，但不能通过某种规则去试图构造一个长度或深度为无穷的列表。</p>
+<p>与 Python 相同，Mathematica 中的列表同样是有序的、可变长的、可以修改元素、列表元素类型不限也不必相同、可以嵌套列表。</p>
+<h1 id="怎么创建一个列表？"><a href="#怎么创建一个列表？" class="headerlink" title="怎么创建一个列表？"></a>怎么创建一个列表？</h1><p>直观来说，Python 中的列表和 Mathematica 中的最大不同，就是用的括号不一样。Python 中，列表元素置于方括号中（在 Mathematica 中，方括号被用来区别符号表达式中的头部与参数序列），Mathematica 中，列表元素置于花括号中（在 Python 中，花括号被用于表示字典）。其实对于 Mathematica 来说，用花括号表示列表仅仅是为了简洁罢了。任何一对花括号<code>&#123;&#125;</code>都等价于<code>List&#91;&#93;</code>。</p>
+<h3 id="Python-1"><a href="#Python-1" class="headerlink" title="Python"></a>Python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="Mathematica-1"><a href="#Mathematica-1" class="headerlink" title="Mathematica"></a>Mathematica</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mylist = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;</span><br><span class="line">(* An alternative way *)</span><br><span class="line">mylist2 = List[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+<h1 id="列表操作"><a href="#列表操作" class="headerlink" title="列表操作"></a>列表操作</h1><h2 id="检索"><a href="#检索" class="headerlink" title="检索"></a>检索</h2><p>给出下标去检索元素。Python 和 Mathematica 的元素访问方式很类似，都不允许越界访问，都是可以去倒数元素访问的。这可是比 C 那种动不动就越界友好得多的（或许数组和列表是不具可比性的）。但是在下标策略上，Python 和 Mathematica 又有很大的不同。</p>
+<h3 id="Python-2"><a href="#Python-2" class="headerlink" title="Python"></a>Python</h3><p>Python 的索引是从 0 开始的，即下标 0 引用第一个元素。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="prompt">&gt;&gt;&gt; </span>mylist[<span class="number">0</span>]</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>倒数元素用负数，比如最后一个元素用下标 -1。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="prompt">&gt;&gt;&gt; </span>mylist[-<span class="number">1</span>]</span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h3 id="Mathematica-2"><a href="#Mathematica-2" class="headerlink" title="Mathematica"></a>Mathematica</h3><p>Mathematica 的索引是从 1 开始的，这倒是十分与众不同。而 Mathematica、Matlab 和 R都是这个策略。</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">In</span>[<span class="number">20</span>]:= mylist[[<span class="number">1</span>]]</span><br><span class="line"><span class="keyword">Out</span>[<span class="number">20</span>]= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>而倒数元素用负数时，与 Python 相同，同样是最后一个元素用下标 -1。</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">In</span>[<span class="number">21</span>]:= mylist[[-<span class="number">1</span>]]</span><br><span class="line"><span class="keyword">Out</span>[<span class="number">21</span>]= <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>这样设计显得十分对称。但是下标 0 哪去了？</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">In</span>[<span class="number">22</span>]:= mylist[[<span class="number">0</span>]]</span><br><span class="line"><span class="keyword">Out</span>[<span class="number">22</span>]= <span class="keyword">List</span></span><br></pre></td></tr></table></figure>
+<p>下标 0 获得的是表达式的头部。Mathematica 里面双方括号<code>m[[i, j, …]]</code>等价于<code>Part[m, i, j, …]</code>。该写法不仅可以用于列表，也可以用于任何表达式，Mathematica 中约定下标 0 的元素为表达式的头部。在 StackExchange 的 Mathematica 版上有个答案非常好，答主 evanb 画了一张图，可以说是秒懂。对于<code>f = F[1, 2, 3, 4, 5]</code>，这个表达式可以看成：</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">------------</span><br><span class="line">     F</span><br><span class="line">5          1</span><br><span class="line"></span><br><span class="line">4          2</span><br><span class="line">     3</span><br><span class="line">------------</span></span><br></pre></td></tr></table></figure>
+<p><code>F</code>作为表达式的头部具有下标 0，其余的只要以此类推就可以得到下标值。</p>
+<h3 id="为什么要从-0-开始计数？（译自-Edsger-Wybe-Dijkstra-的手记）"><a href="#为什么要从-0-开始计数？（译自-Edsger-Wybe-Dijkstra-的手记）" class="headerlink" title="为什么要从 0 开始计数？（译自 Edsger Wybe Dijkstra 的手记）"></a>为什么要从 0 开始计数？（译自 Edsger Wybe Dijkstra 的手记）</h3><p>为表示自然数序列 $2,3,\cdots ,12$ 又不想加那没有什么用的三个点，我们有四种表示习惯：</p>
+<p>a) $2\leq i&lt;13$<br>b) $1&lt;i\leq 12$<br>c) $2\leq i\leq 12$<br>d) $1&lt;i&lt;13$</p>
+<p>是否有理由让我们更加偏爱其中的某一种写法呢？没错，的确有。我们注意到 a) 和 b) 两种写法具有一种优势，那就是边界之间的差值和序列的长度是相等的。我们同样注意到，可以推出的一点是，这两种写法对于两个相邻的序列来说，都可以保证一者的上边界恰好是另一者的下边界。以上两个观察所得都是正确的，但是没能让我们在 a) 和 b) 中做出选择，所以我们还要再论。</p>
+<p>存在最小的自然数。而 b) 和 d) 的写法会使下边界成为一个例外——它们使得从最小自然数开始的序列不得不用非自然数的数字去做下边界。这很丑，因此考虑到下边界，我们更偏爱 a) 和 c) 中 $\leq$ 的写法。今考虑序列从最小的自然数开始的情形，序列的上边界被包含在了区间之中，会使得当序列成为空集时，其上边界会达到一个非自然数。这很丑，因此考虑到上边界，我们更偏爱 a) 和 d) 中 $&lt;$ 的写法。综上所述，a) 是我们更喜欢的一种写法。</p>
+<blockquote>
+<p>【评注】由施乐帕克研究中心开发的程序设计语言 Mesa，在整数间隔方面的表示对应了以上四种写法。在充分接触 Mesa 语言后，我们发现另外三种写法一直都是混乱与错误的源头。出于这一经历的考量，我们强烈建议 Mesa 程序员不要用这三种写法，尽管语言是允许的。我在这里提到了这一实验证据，暂且先这样讲，是因为有些人不适应这个结论，也没有照做。【评注毕】</p>
+</blockquote>
+<p>对于长度为 $N$ 的序列，我们想要通过下标去区别它的元素。那么下一个伤脑筋的问题出现了，起始元素应该用什么下标值呢？遵循写法 a)，如果下标值始于 1 的话，下标的范围就会是 $1\leq i&lt;N+1$；而从 0 开始的话，这个范围就漂亮多了，会是 $0\neq i&lt;N$。所以让序数从 0 开始吧：元素序数（下标）和序列中在该元素之前的元素数目是相等的。这则故事的寓意是，（在这么多个世纪之后！）我们最好还是将 0 作为最自然的那个数吧。</p>
+<blockquote>
+<p>【评注】许多程序设计语言在设计的时候没有考虑这一个细节，在 FORTRAN 中，下标总是起始于 1 的；在 ALGOL 60 和 PASCAL 中，采用了 c) 的写法；在最近的 SASL 中，又恢复了 FORTRAN 的写法：SASL 中的序列同时又是正整数的函数。可惜！【评注毕】</p>
+</blockquote>
+<p>上述议论是由最近的一件小事所引起的。有一次，我的一位搞数学的同事（不搞计算机），大发雷霆，怒斥那些年轻的计算科学研究者“迂腐”，就是因为他们习惯从 0 开始计数。他有意地把这种最合理的写法看成一种挑衅。（我那“xx毕”的写法也被他看成了一种挑衅，可是这么写很有用：我认识一个学生，有一次考试他默认问题到页尾就结束了，结果差点不及格。）我觉得 Antoy Jay 说得很好，“对企业精神来说，就像和各种宗教一样，应该将异教徒剔除。这并不是因为他一定是错的，而是因为他有可能是对的。”</p>
+<h2 id="元素的修改、增添和删除"><a href="#元素的修改、增添和删除" class="headerlink" title="元素的修改、增添和删除"></a>元素的修改、增添和删除</h2><h3 id="Python-3"><a href="#Python-3" class="headerlink" title="Python"></a>Python</h3><p>Python 中的列表提供了<code>append</code>、<code>insert</code>和<code>pop</code>方法。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="comment"># To change an element</span></span><br><span class="line">mylist[<span class="number">2</span>] = <span class="number">2</span></span><br><span class="line"><span class="comment"># mylist = [1, 2, 2, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># To append an element to the list</span></span><br><span class="line">mylist.append(<span class="number">6</span>)</span><br><span class="line"><span class="comment"># mylist = [1, 2, 2, 4, 5, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># To insert an element to the list</span></span><br><span class="line">mylist.insert(<span class="number">1</span>, <span class="number">1.5</span>)</span><br><span class="line"><span class="comment"># mylist = [1, 1.5, 2, 2, 4, 5, 6]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># To delete the last element</span></span><br><span class="line">mylist.pop()</span><br><span class="line"><span class="comment"># mylist = [1, 1.5, 2, 2, 4, 5]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># To delete a certain element</span></span><br><span class="line">mylist.pop(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># mylist = [1, 2, 2, 4, 5]</span></span><br></pre></td></tr></table></figure>
+<h3 id="Mathematica-3"><a href="#Mathematica-3" class="headerlink" title="Mathematica"></a>Mathematica</h3><p>Mathematica 也有对应的<code>Append</code>、<code>Insert</code>和<code>Delete</code>函数，但是 Mathematica 中的列表操作函数一般返回一个新的列表，而保持原有的列表不变。这和<code>Part</code>返回的并不是新实例，而是原列表的一部分是不同的。但是 Mathematica 依旧保留了一部分带有<code>To</code>函数，比如<code>AppendTo</code>函数，作为特殊的赋值函数以实现对列表本身的修改。<code>AppendTo[s, element]</code>这种写法与<code>s = Append[s, element]</code>即<code>Set[s, Append[s, element]]</code>完全等价的。根据使用<code>Trace</code>的观察，我们也能够验证这两种写法在 Mathematica 内部的等效性。</p>
+<h2 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h2><p>Python 和 Mathematica 中的列表都可以去选取一部分，这在 Python 中称作“切片”，类似于 Mathematica 中的子列表。Python 中的切片和 Mathematica 中通过部分<code>Take</code>获得子列表的语法是相似的，并且都和元素检索的语法是几乎相同的（在 Mathematica 中检索元素本身就是<code>Take</code>函数实现的）。但是在 Python 中，切片总会创建一个新的实例，而在 Mathematica 中，部分则可以去进行赋值并作用于原对象。</p>
+<h3 id="Python-中的切片"><a href="#Python-中的切片" class="headerlink" title="Python 中的切片"></a>Python 中的切片</h3><p><code>mylist[m:n:s]</code>为取出下标为<code>m</code>到下标为<code>n</code>但不包括<code>n</code>的元素，步长为<code>s</code>。对于<code>m</code>和<code>n</code>负数也是同样被支持的。这里，创建切片中的下标上下边界的选取和上文中那段翻译所提到的策略是一致的，都是半闭半开的写法。</p>
+<h3 id="Mathematica-中的选取子列"><a href="#Mathematica-中的选取子列" class="headerlink" title="Mathematica 中的选取子列"></a>Mathematica 中的选取子列</h3><p>Mathematica 中选取子列表使用<code>Part</code>函数，即双方括号<code>[[…]]</code>。其他列表操作函数，比如<code>First</code>、<code>Last</code>、<code>Take</code>、<code>Drop</code>、<code>Rest</code>和<code>Most</code>都是<code>Part</code>的特例。<code>Part</code>所取出的子列是允许进行赋值操作的。</p>
+<p><code>Part</code> 所操作的对象不限于列表，适用于所有非原子表达式。Mathematica 中原子表达式如<code>Complex[1, 2]</code>、<code>Rational[1, 2]</code>，分别表示复数$1+2i$和分数$\frac{1}{2}$，这类对象在<code>AtomQ</code>作用下返回<code>True</code>。</p>
+<p>具体的语法为<code>expr[[m;;n;;s]]</code>，为<code>expr</code>第<code>m</code>个元素到第<code>n</code>个元素，步长为<code>s</code>的子列。Mathematica 的策略是<code>m</code>和<code>n</code>都是取到等于号的，这一点与 Python 的半闭半开的策略不同。其中<code>;;</code>为跨度<code>Span</code>，<code>m;;n;;s</code>等价于<code>Span[m, n, s]</code>。</p>
+<hr>
+<p>关于迭代与列表生成器有了领悟之后再续。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
+<li><p><a href="http://mathematica.stackexchange.com/questions/86189/why-do-mathematica-list-indices-start-at-1" target="_blank" rel="external">Why do Mathematica list indices start at 1?</a></p>
+</li>
+<li><p><a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html" target="_blank" rel="external">Why numbering should start at zero</a></p>
+</li>
+<li><p><a href="https://docs.python.org/" target="_blank" rel="external">Python Documentations</a></p>
+</li>
+<li><p><a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">廖雪峰的网站</a></p>
+</li>
+</ol>
 
       
     </div>
@@ -226,47 +278,8 @@ Python 的列表是有序的，可变长的，可以对元素进行修改的。�
 </article>
 
 
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
 
 
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="python_and_mathematica_1" data-title="Python 和 Mathematica 中的列表" data-url="http://celestialphineas.github.io/2016/07/23/python_and_mathematica_1/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
 
 
 
