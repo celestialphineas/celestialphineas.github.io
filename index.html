@@ -4,11 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>Celestial Phineas</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
-        <script type="text/javascript" src="/js/jquery-3.1.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     </head>
     <body>
-        
+        <script type="text/javascript">
+            $(function(){$('#fullpages').fullpage();});
+        </script>
+        <div id="fullpages">
+            <div class="section active">
+                <h3>First</h3>
+            </div>
+            <div class="section">
+                <h3>Second</h3>
+            </div>
+            <div class="section">
+                <h3>Third</h3>
+            </div>
+        </div>
     </body>
 </html>
