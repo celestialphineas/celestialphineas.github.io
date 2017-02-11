@@ -1,79 +1,69 @@
-var typewriter = 
+var typewriter =
 {
-    baseString: 'Under Construction...',
-    cursor: 0,
+    baseString: 'Under construction...',
+    DOMElement: document.getElementById('uc'),
     typing: true,
-    currentString: '',
-    DOMElement: null,
+    cursor: 0,
+    frameWidth: 10,
+    currentFrame: 0,
     forwardShifting: [],
-    backwardShifting: [],
-    forwardTimeIntervalRandomize: true,
-    backwardTimeIntervalRandomzie: false,
-    forwardTimeIntervalBounds: [1000, 1800],
-    backwardTimeIntervalBounds: [1000, 1800],
-    init: function(elementID)
+    backwardShifting: 1000,
+    init: function()
     {
         var i;
-        this.cursor = 0;
         this.typing = true;
-        this.currentString = '';
-        this.DOMElement = document.getElementById(elementID).innerText;
-        if(this.forwardTimeIntervalRandomize)
+        this.cursor = 0;
+        this.frameWidth = 10;
+        this.currentFrame = 0;
+        this.forwardShifting[0] = Math.random() * (500 - 100) + 100;
+        for(i = 1; i < this.baseString.length; i++)
         {
-            for(i = 0; i < this.baseString.length; i++)
-            {
-                this.forwardShifting[i] =
-                    Math.random() * (this.forwardTimeIntervalBounds[1] - 
-                    this.forwardTimeIntervalBounds[0]) + this.forwardTimeIntervalBounds[0];
-            }
-        }
-        else
-        {
-            for(i = 0; i < this.baseString.length; i++)
-            {
-                this.forwardShifting[i] = (this.forwardTimeIntervalBounds[0]
-                    + this.forwardTimeIntervalBounds[1])/2;
-            }
-        }
-        if(this.backwardTimeIntervalRandomzie)
-        {
-            for(i = 0; i < this.baseString.length; i++)
-            {
-                this.backwardShifting[i] =
-                    Math.random() * (this.backwardTimeIntervalBounds[1] -
-                    this.backwardTimeIntervalBounds[0]) + backwardTimeIntervalBounds[0];
-            }
-        }
-        else
-        {
-            for(i = 0; i < this.baseString.length; i++)
-            {
-                this.backwardShifting[i] = (this.backwardTimeIntervalBounds[0]
-                    + this.backwardTimeIntervalBounds[1])/2;
-            }
+            this.forwardShifting[i] = this.forwardShifting[i - 1]
+                + Math.random() * (500 -100) + 100;
         }
     },
     shift: function()
     {
+        var i;
         if(this.typing)
         {
-            setTimeout('this.DOMElement = this.currentString',
-                this.forwardShifting[this.cursor]);
-            this.cursor++;
-            this.currentString = this.baseString.substr(0, this.cursor);
-            if(this.cursor >= this.baseString.length) this.typing = false;
+            for(i = 0; i < this.baseString.length; i++)
+            {
+                if(this.forwardShifting[i] > this.currentFrame) break;
+            }
+            if(this.cursor === this.baseString.length)
+            {
+                this.cursor = this.baseString.length - 1;
+                this.typing = false;
+                this.currentFrame = this.baseString.length * this.frameWidth;
+            }
+            else
+            {
+                this.cursor = i;
+                this.currentFrame += this.frameWidth;
+            }
         }
         else
         {
-            setTimeout('this.DOMElement = this.currentString',
-                this.backwardShifting[this.cursor]);
-            this.cursor--;
-            this.currentString = this.baseString.substr(0, this.cursor);
-            if(this.cursor <= 0) this.typing = true;
+            for(i = this.baseString.length - 1; i >= 0; i--)
+            {
+                if(i * this.backwardShifting < this.currentFrame) break;
+            }
+            if(this.cursor === -1)
+            {
+                this.cursor = 0;
+                this.typing = true;
+                this.currentFrame = 0;
+            }
+            else
+            {
+                this.cursor = i;
+                this.currentFrame -= this.frameWidth;
+            }
         }
+        this.DOMElement.innerText = this.cursor;
     }
-};
+}
 
-typewriter.init('uc');
-typewriter.shift();
-typewriter.shift();
+typewriter.init();
+setInterval('typewriter.shift()', 10);
