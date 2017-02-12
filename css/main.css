@@ -1,4 +1,4 @@
-@import 'button_animation.css';
+@import 'animation.css';
 @font-face {
     font-family: 'Orkney';
     src: url('fonts/orkney-light-webfont.eot');
@@ -10,12 +10,36 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Orkney';
+    src: url('fonts/orkney-regular-webfont.eot');
+    src: url('fonts/orkney-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/orkney-regular-webfont.woff2') format('woff2'),
+         url('fonts/orkney-regular-webfont.woff') format('woff'),
+         url('fonts/orkney-regular-webfont.ttf') format('truetype'),
+         url('fonts/orkney-regular-webfont.svg#orkneylight') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orkney';
+    src: url('fonts/orkney-bold-webfont.eot');
+    src: url('fonts/orkney-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/orkney-bold-webfont.woff2') format('woff2'),
+         url('fonts/orkney-bold-webfont.woff') format('woff'),
+         url('fonts/orkney-bold-webfont.ttf') format('truetype'),
+         url('fonts/orkney-bold-webfont.svg#orkneylight') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 
 body
 {
     margin: 0;
-    font-family: Orkney, "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "noto sans", "思源黑体", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    background: gray;
+    font-family: 'Orkney', "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "noto sans", "思源黑体", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    background: #FCFAF2;
 }
 a
 {
@@ -24,8 +48,24 @@ a
 
 #firstpage
 {
-    position: relative;
     top: 0;
+    position: relative;
+    background-image: url('../img/meteor.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gradientoverlay
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0)) rgba(0, 0, 0, 0.5));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0)) rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)) rgba(0, 0, 0, 0.5));
 }
 
 #firstcontents
