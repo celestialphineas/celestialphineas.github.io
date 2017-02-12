@@ -1,0 +1,130 @@
+@import 'button_animation.css';
+@font-face {
+    font-family: 'Orkney';
+    src: url('fonts/orkney-light-webfont.eot');
+    src: url('fonts/orkney-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/orkney-light-webfont.woff2') format('woff2'),
+         url('fonts/orkney-light-webfont.woff') format('woff'),
+         url('fonts/orkney-light-webfont.ttf') format('truetype'),
+         url('fonts/orkney-light-webfont.svg#orkneylight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body
+{
+    margin: 0;
+    font-family: Orkney, "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "noto sans", "思源黑体", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    background: gray;
+}
+a
+{
+    text-decoration: none;
+}
+
+#firstpage
+{
+    position: relative;
+    top: 0;
+}
+
+#firstcontents
+{
+    position:relative;
+    margin: auto;
+    top: 30%;
+    overflow: visible;
+    text-align: center;
+}
+
+#card
+{
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    min-height: 140px;
+    overflow: auto;
+}
+
+#avatar
+{
+    float: left;
+    margin: 10px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+#headline
+{
+    bottom: 0;
+    float: left;
+    margin: 10px;
+    padding-left: 15px;
+    min-height: 120px;
+    overflow: visible;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: white;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+}
+
+#name
+{
+    margin-top: 5%;
+    font-size: 24pt;
+    color: white;
+    font-weight: 300;
+}
+
+#badges
+{
+    text-align: left;
+}
+
+.badge
+{
+    display: inline-block;
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin: 15px 5px;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 16px;
+    text-align: center;
+    animation: reverseglow 1s;
+}
+.badge:hover
+{
+    animation: glow 1s;
+}
+
+#bloglink
+{
+    display: inline-block;
+    color: white;
+    width: 240px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    background: transparent;
+    text-align: center;
+    animation: reverseglow 1s;
+}
+#bloglink:hover
+{
+    animation: glow 1s;
+}

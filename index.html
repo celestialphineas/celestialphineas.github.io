@@ -6,24 +6,47 @@
         <title>Celestial Phineas</title>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     </head>
     <body>
-        <script type="text/javascript">
-            $(function(){$('#fullpages').fullpage();});
+        <div id="firstpage">
+        <script>
+            $('#firstpage').height(window.innerHeight);
+            $(window).resize(
+                (function()
+                {$('#firstpage').height(window.innerHeight)})
+            );
         </script>
-        <div id="fullpages">
-            <div class="section active">
-                <h3>First</h3>
-            </div>
-            <div class="section">
-                <div id="uc">
+            <div id="firstcontents">
+                <div id="card">
+                    <img id="avatar", src="https://avatars3.githubusercontent.com/u/17267055?v=3&s=460" />
+                    <div id="headline">
+                        <div id="name">Celestial Phineas</div>
+                        生无所息，息所在圹。
+                        <div id="badges">
+                            <a class="badge" id="mail" href="mailto:celestialphineas@outlook.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a class="badge" id="github" href="http://github.com/celestialphineas">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="badge" id="pinterest" href="http://www.pinterest.com/celephineas/">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                            <a class="badge" id="twitter" href="http://twitter.com/CelPhineas">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                <a id="bloglink" href="blog/">
+                    My Blog
+                </a>
             </div>
-            <div class="section">
-                <h3>Third</h3>
+        </div>
+        <div class="section">
+            <div id="uc">
+                Under construction...
             </div>
         </div>
         <script type="text/javascript" src="js/typewriter.js"></script>

@@ -1,0 +1,42 @@
+@-o-keyframes glow
+{
+    from {text-shadow: 0px 0px 0px white;}
+    to {text-shadow: 0px 0px 10px white;}
+}
+@-webkit-keyframes glow
+{
+    from {text-shadow: 0px 0px 0px white;}
+    to {text-shadow: 0px 0px 10px white;}
+}
+@-moz-keyframes glow
+{
+    from {text-shadow: 0px 0px 0px white;}
+    to {text-shadow: 0px 0px 10px white;}
+}
+@keyframes glow
+{
+    from {text-shadow: 0px 0px 0px white;}
+    to {text-shadow: 0px 0px 10px white;}
+}
+
+@-o-keyframes reverseglow
+{
+    from {text-shadow: 0px 0px 10px white;}
+    to {text-shadow: 0px 0px 0px white;}
+}
+@-webkit-keyframes reverseglow
+{
+    from {text-shadow: 0px 0px 10px white;}
+    to {text-shadow: 0px 0px 0px white;}
+}
+@-moz-keyframes reverseglow
+{
+    from {text-shadow: 0px 0px 10px white;}
+    to {text-shadow: 0px 0px 0px white;}
+}
+@keyframes reverseglow
+{
+    from {text-shadow: 0px 0px 10px white;}
+    to {text-shadow: 0px 0px 0px white;}
+}
+

@@ -1,7 +1,7 @@
 var typewriter =
 {
-    DOMElement: document.getElementById('uc'),
-    baseString: 'Under construction...',
+    DOMElement: null,
+    baseString: '',
     typing: true,
     cursor: 0,
     frameWidth: 10,
@@ -10,7 +10,6 @@ var typewriter =
     backwardShifting: 100,
     init: function(
         _DOMElement,
-        _baseString,
         _frameWidth,
         forwardShiftingLowerBound,
         forwardShiftingUpperBound,
@@ -23,7 +22,7 @@ var typewriter =
         this.frameWidth = _frameWidth;
         this.currentFrame = 0;
         this.DOMElement = _DOMElement;
-        this.baseString = _baseString;
+        this.baseString = _DOMElement.innerText;
         this.forwardShifting[0] = Math.random() *
             (forwardShiftingUpperBound - forwardShiftingLowerBound)
             + forwardShiftingLowerBound;
@@ -65,5 +64,5 @@ var typewriter =
     }
 }
 
-typewriter.init(document.getElementById('uc'), 'Under construction...', 10, 100, 200, 50);
+typewriter.init(document.getElementById('uc'), 10, 100, 200, 50);
 setInterval('typewriter.shift()', 10);
