@@ -9,14 +9,7 @@
         <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     </head>
     <body>
-        <div id="firstpage" data-stellar-background-ratio="0.5">
-        <script>
-            $('#firstpage').height(window.innerHeight);
-            $(window).resize(
-                (function()
-                {$('#firstpage').height(window.innerHeight)})
-            );
-        </script>
+        <div class="fullpage" id="firstpage" data-stellar-background-ratio="0.5">
             <div id="firstcontents">
                 <div id="card">
                     <img id="avatar", src="https://avatars3.githubusercontent.com/u/17267055?v=3&s=460" />
@@ -55,8 +48,9 @@
                 in graphic design and typography.
             </p>
         </div>
-        <div class="section">
-            <div id="uc">
+        <div id="newsection">
+            <div id="yagradientoverlay"></div>
+            <div class="fullpage" id="uc">
                 Under construction...
             </div>
         </div>

@@ -40,3 +40,27 @@
     to {text-shadow: 0px 0px 0px white;}
 }
 
+@-o-keyframes blink
+{
+    0% {color: rgba(0, 0, 0, 0);}
+    50% {color: rgba(0, 0, 0, 1);}
+    100% {color: rgba(0, 0, 0, 0);}
+}
+@-webkit-keyframes blink
+{
+    0% {color: rgba(0, 0, 0, 0);}
+    50% {color: rgba(0, 0, 0, 1);}
+    100% {color: rgba(0, 0, 0, 0);}
+}
+@-moz-keyframes blink
+{
+    0% {color: rgba(0, 0, 0, 0);}
+    50% {color: rgba(0, 0, 0, 1);}
+    100% {color: rgba(0, 0, 0, 0);}
+}
+@keyframes blink
+{
+    0% {color: rgba(0, 0, 0, 0);}
+    50% {color: rgba(0, 0, 0, 1);}
+    100% {color: rgba(0, 0, 0, 0);}
+}
